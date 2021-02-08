@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/background">
+        <file>res/icon/authorization.jpg</file>
+    </qresource>
+    <qresource prefix="/icon">
+        <file>res/icon/i_status/i_stat_notpref.png</file>
+    </qresource>
+</RCC>
