@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>591</width>
-    <height>382</height>
+    <height>381</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -20,7 +20,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>140</y>
+     <y>160</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -41,14 +41,10 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel {
-  text-align: center;
-  color: rgb(0, 15, 0);
-  border-style: outset;
-  border-width: 0px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: rgba(255, 255, 255, 100);
   font: bold 16px;
-  width: 1em;
   padding: 5px;
 }</string>
    </property>
@@ -60,7 +56,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>60</y>
+     <y>80</y>
      <width>141</width>
      <height>31</height>
     </rect>
@@ -81,14 +77,10 @@
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel {
-  text-align: center;
-  color: rgb(0, 15, 0);
-  border-style: outset;
-  border-width: 0px;
-  border-radius: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
   background-color: rgba(255, 255, 255, 100);
   font: bold 16px;
-  width: 1em;
   padding: 5px;
 }</string>
    </property>
@@ -100,7 +92,7 @@
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>170</y>
+     <y>191</y>
      <width>341</width>
      <height>41</height>
     </rect>
@@ -117,13 +109,10 @@
     <bool>false</bool>
    </property>
    <property name="styleSheet">
-    <string notr="true">QLineEdit#text_password{
-  border-style: outset;
-  border-width: 1px;
-  border-radius: 5px;
-  color: #000000;
-  background-color: rgba(255, 255, 255, 200);
- 
+    <string notr="true">QLineEdit#text_password {
+  border: 3px solid transparent;
+  border-bottom: 1px ridge black;
+  background-color: rgba(255, 255, 255, 150);
 }</string>
    </property>
    <property name="frame">
@@ -132,14 +121,17 @@
    <property name="echoMode">
     <enum>QLineEdit::Password</enum>
    </property>
+   <property name="clearButtonEnabled">
+    <bool>false</bool>
+   </property>
   </widget>
   <widget class="QPushButton" name="butt_enter">
    <property name="geometry">
     <rect>
-     <x>120</x>
-     <y>250</y>
-     <width>341</width>
-     <height>51</height>
+     <x>300</x>
+     <y>251</y>
+     <width>161</width>
+     <height>41</height>
     </rect>
    </property>
    <property name="font">
@@ -158,7 +150,7 @@
   border-style: outset;
   border-width: 2px;
   border-radius: 10px;
-  background-color: rgba(100, 100, 100, 100);
+  background-color: rgba(100, 200, 100, 100);
   font: bold 20px;
   color: black;
   border-color: white;
@@ -169,23 +161,22 @@ QPushButton#butt_enter:hover{
   border-width: 2px;
   border-radius: 15px;
   border-color: white;
-  color: white;
-  background-color: rgba(100, 100, 100, 100);
+  background-color: rgba(100, 250, 100, 100);
 }
 
 QPushButton#butt_enter:pressed{
-  background-color: rgba(255, 255, 255, 200);
+  background-color: rgba(100, 255, 100, 150);
 }</string>
    </property>
    <property name="text">
-    <string>ВОЙТИ</string>
+    <string>ВХОД</string>
    </property>
   </widget>
   <widget class="QLineEdit" name="text_login">
    <property name="geometry">
     <rect>
      <x>120</x>
-     <y>90</y>
+     <y>111</y>
      <width>341</width>
      <height>41</height>
     </rect>
@@ -203,36 +194,16 @@ QPushButton#butt_enter:pressed{
    </property>
    <property name="styleSheet">
     <string notr="true">QLineEdit#text_login{
-  border-style: outset;
-  border-width: 1px;
-  border-radius: 5px;
-  color: #000000;
-  background-color: rgba(255, 255, 255, 200);
+  border: 3px solid transparent;
+  border-bottom: 1px ridge black;
+  background-color: rgba(255, 255, 255, 150);
 }</string>
    </property>
    <property name="echoMode">
     <enum>QLineEdit::Normal</enum>
    </property>
-  </widget>
-  <widget class="QPushButton" name="pushButton">
-   <property name="geometry">
-    <rect>
-     <x>558</x>
-     <y>2</y>
-     <width>31</width>
-     <height>31</height>
-    </rect>
-   </property>
-   <property name="styleSheet">
-    <string notr="true">QPushButton#pushButton{
-background-image: url(:/icon/res/icon/i_status/i_stat_notpref.png);
-background-repeat:no-repeat;
-border-width: 2px;
-border-radius: 10px;
-}</string>
-   </property>
-   <property name="text">
-    <string/>
+   <property name="clearButtonEnabled">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QLabel" name="background">
@@ -246,18 +217,92 @@ border-radius: 10px;
    </property>
    <property name="styleSheet">
     <string notr="true">QLabel#background{
-background-image: url(:/background/res/icon/authorization.jpg);
-background-repeat:no-repeat;
+background-image:  url(:/res/icon/Authorization.jpg);
 background-position:top 80px;
 border-style: outset;
 border-width: 1px;
 border-radius: 20px;
 border-color: black;
-width: 1em;
 }</string>
    </property>
    <property name="text">
     <string/>
+   </property>
+  </widget>
+  <widget class="QToolButton" name="butt_eyes">
+   <property name="geometry">
+    <rect>
+     <x>420</x>
+     <y>191</y>
+     <width>41</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>...</string>
+   </property>
+   <property name="icon">
+    <iconset>
+     <normaloff>:/background/res/icon/i_Pass/eyes.png</normaloff>:/background/res/icon/i_Pass/eyes.png</iconset>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>40</width>
+     <height>40</height>
+    </size>
+   </property>
+   <property name="popupMode">
+    <enum>QToolButton::DelayedPopup</enum>
+   </property>
+   <property name="autoRaise">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="butt_exit">
+   <property name="geometry">
+    <rect>
+     <x>120</x>
+     <y>251</y>
+     <width>161</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>-1</pointsize>
+     <weight>75</weight>
+     <italic>false</italic>
+     <bold>true</bold>
+    </font>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton#butt_exit{
+  border-style: outset;
+  border-width: 2px;
+  border-radius: 10px;
+  background-color: rgba(200, 100, 100, 100);
+  font: bold 20px;
+  color: black;
+  border-color: white;
+  width: 3em;
+  padding: 6px;
+}
+QPushButton#butt_exit:hover{
+  border-width: 2px;
+  border-radius: 15px;
+  border-color: white;
+  background-color: rgba(250, 100, 100, 100);
+}
+
+QPushButton#butt_exit:pressed{
+  background-color: rgba(250, 100, 100, 150);
+}</string>
+   </property>
+   <property name="text">
+    <string>ВЫХОД</string>
    </property>
   </widget>
   <zorder>background</zorder>
@@ -266,7 +311,8 @@ width: 1em;
   <zorder>text_password</zorder>
   <zorder>butt_enter</zorder>
   <zorder>text_login</zorder>
-  <zorder>pushButton</zorder>
+  <zorder>butt_eyes</zorder>
+  <zorder>butt_exit</zorder>
  </widget>
  <resources/>
  <connections/>

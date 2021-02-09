@@ -1,8 +1,49 @@
 <RCC>
-    <qresource prefix="/background">
-        <file>res/icon/authorization.jpg</file>
-    </qresource>
-    <qresource prefix="/icon">
+    <qresource prefix="/">
+        <file>res/icon/i_About/About_about.png</file>
+        <file>res/icon/i_About/About_feedback.png</file>
+        <file>res/icon/i_About/About_help.png</file>
+        <file>res/icon/i_Administration/icons8-бассейн-50.png</file>
+        <file>res/icon/i_Administration/icons8-грузовое-судно-50-2.png</file>
+        <file>res/icon/i_Administration/icons8-грузовое-судно-50.png</file>
+        <file>res/icon/i_Administration/icons8-изменить-пользователя-50.png</file>
+        <file>res/icon/i_Administration/icons8-карта-россии-50.png</file>
+        <file>res/icon/i_Administration/icons8-ключ-64.png</file>
+        <file>res/icon/i_Administration/icons8-компас-50.png</file>
+        <file>res/icon/i_Administration/icons8-отмеченный-грузовик-50.png</file>
+        <file>res/icon/i_Administration/icons8-пассажир-с-багажом-50.png</file>
+        <file>res/icon/i_Administration/icons8-поверхность-50.png</file>
+        <file>res/icon/i_Administration/icons8-пункт-самовывоза-50.png</file>
+        <file>res/icon/i_Administration/icons8-редактировать-свойство-50.png</file>
+        <file>res/icon/i_Administration/icons8-свернуть-окно-50.png</file>
+        <file>res/icon/i_Administration/icons8-север-50.png</file>
+        <file>res/icon/i_Logo/icons8-cargo-ship-50.png</file>
+        <file>res/icon/i_Pass/eyes.png</file>
+        <file>res/icon/i_priorety/i_pr_high.png</file>
+        <file>res/icon/i_priorety/i_pr_low.png</file>
+        <file>res/icon/i_priorety/i_pr_medium.png</file>
+        <file>res/icon/i_Report/icons8-busines-report-50.png</file>
+        <file>res/icon/i_status/i_stat_done.png</file>
+        <file>res/icon/i_status/i_stat_expec.png</file>
         <file>res/icon/i_status/i_stat_notpref.png</file>
+        <file>res/icon/i_Tasc/taask_add.png</file>
+        <file>res/icon/i_Tasc/task_check.png</file>
+        <file>res/icon/i_Tasc/task_delete.png</file>
+        <file>res/icon/i_Tasc/task_edit.png</file>
+        <file>res/icon/i_Tasc/task_performed.png</file>
+        <file>res/icon/i_Transportation/icons8-cегодня-50.png</file>
+        <file>res/icon/i_Transportation/icons8-все -таблицы.png</file>
+        <file>res/icon/i_Transportation/icons8-вставить-таблицу-64.png</file>
+        <file>res/icon/i_Transportation/icons8-добавить-50.png</file>
+        <file>res/icon/i_Transportation/icons8-звездочка-50.png</file>
+        <file>res/icon/i_Transportation/icons8-новая-таблица-40.png</file>
+        <file>res/icon/i_Transportation/icons8-ок-50.png</file>
+        <file>res/icon/i_Transportation/icons8-основные-таблицы.png</file>
+        <file>res/icon/i_Transportation/icons8-поиск-50.png</file>
+        <file>res/icon/i_Transportation/icons8-редактировать-50.png</file>
+        <file>res/icon/i_Transportation/icons8-удалить-50.png</file>
+        <file>res/icon/Authorization.jpg</file>
+        <file>res/icon/logo.ico</file>
+        <file>res/icon/logo.png</file>
     </qresource>
 </RCC>

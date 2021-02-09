@@ -15,6 +15,9 @@ public:
     DispatcherWindow(QWidget *parent = nullptr);
     ~DispatcherWindow();
 
+signals:
+    void openAuthorizationWindow();  // Сигнал для первого окна на открытие
+
 private:
     Ui::DispatcherWindow *ui;
 };

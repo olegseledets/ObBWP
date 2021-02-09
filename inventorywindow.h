@@ -15,6 +15,9 @@ public:
     explicit InventoryWindow(QWidget *parent = nullptr);
     ~InventoryWindow();
 
+signals:
+    void openAuthorizationWindow();  // Сигнал для первого окна на открытие
+
 private:
     Ui::InventoryWindow *ui;
 };

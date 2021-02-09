@@ -15,6 +15,9 @@ public:
     explicit AdministrationWindow(QWidget *parent = nullptr);
     ~AdministrationWindow();
 
+signals:
+    void openAuthorizationWindow();  // Сигнал для первого окна на открытие
+
 private:
     Ui::AdministrationWindow *ui;
 };
